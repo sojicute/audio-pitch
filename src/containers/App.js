@@ -27,7 +27,7 @@ function App() {
         formData.append('File', file);
 
         axios
-            .post('http://localhost:8000/api/upload/' + file.name, formData, config)
+            .post('https://whispering-tor-85579.herokuapp.com/api/upload/' + file.name, formData, config)
             .then((response) => {
                 const mp3 = new Blob([response.data], {type: 'audio/mp3'})
                 const url = window.URL.createObjectURL(mp3)
@@ -52,7 +52,7 @@ function App() {
         <Grid textAlign='center' style={{height: '100vh'}} verticalAlign='middle'>
             <Grid.Column style={{maxWidth: 450}}>
                 <Header as='h1' color='blue' textAlign='center'>
-                    <Image src='sound.svg'/> Upload your audio file
+                    <Image src='static/sound.svg'/> Upload your audio file
                 </Header>
                 <Form loading={loader} onSubmit={handleSubmission}>
                     <Segment>

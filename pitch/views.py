@@ -18,7 +18,6 @@ class FileUploadView(APIView):
 
     def post(self, request, filename, format=None):
         file_obj = request.FILES['file']
-        print(filename)
 
         slow_sound = pitch_change(file_obj.file.name, octaves=-0.2)
 
