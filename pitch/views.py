@@ -7,8 +7,6 @@ from django.http import FileResponse, HttpResponse
 from rest_framework.permissions import AllowAny
 
 from .pitch import pitch_change
-from .serializer import UploadSerializer
-# from .pitch import pitch_change
 from pydub import AudioSegment
 from django.http import HttpResponse, Http404
 import os
