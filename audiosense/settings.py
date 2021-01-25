@@ -25,7 +25,7 @@ SECRET_KEY = '3v1j#tnnd72457k#msp+gpnq&ay%6ps=u8q#1zwhdyx3=!4p49'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['whispering-tor-85579.herokuapp.com']
+ALLOWED_HOSTS = ['whispering-tor-85579.herokuapp.com', '127.0.0.1']
 
 # Application definition
 
