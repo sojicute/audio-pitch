@@ -43,10 +43,6 @@ INSTALLED_APPS = [
     'pitch.apps.PitchConfig'
 ]
 
-CORS_ORIGIN_WHITELIST = (
-    'localhost:3000',
-)
-
 CORS_ORIGIN_ALLOW_ALL = True
 
 MIDDLEWARE = [
